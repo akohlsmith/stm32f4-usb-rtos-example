@@ -1,0 +1,4 @@
+loadfile demo.hex
+r
+go
+q
