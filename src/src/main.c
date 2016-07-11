@@ -120,7 +120,7 @@ static void miscThread(void const *argument)
 
 	while (1) {
 		osDelay(1500);
-		printf("Foo (%d)\n", osKernelSysTick());
+		printf("Foo (%lu)\n", osKernelSysTick());
 	};
 }
 
