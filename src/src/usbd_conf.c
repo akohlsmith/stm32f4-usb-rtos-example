@@ -2,8 +2,8 @@
 #include <usbd_cdc.h>
 #include "usbd_core.h"
 
-#undef USE_USB_FS
-#define USE_USB_HS
+#define USE_USB_FS
+#undef USE_USB_HS
 
 PCD_HandleTypeDef hpcd;
 
