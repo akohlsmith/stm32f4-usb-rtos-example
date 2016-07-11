@@ -190,7 +190,7 @@ openocd:
 
 flash: all
 	#$(JLINK) $(JLINKFLAGS) flash.jlink
-	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) -c "program $(TARGET).elf verify reset exit"
+	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) -c "program $(TARGET).elf verify reset"
 
 debug:
 	@if ! nc -z localhost 3333; then \
