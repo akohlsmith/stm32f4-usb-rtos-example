@@ -41,6 +41,13 @@ void SysTick_Handler(void)
 	osSystickHandler();
 }
 
+/* only one of FS or HS is used in this demo, see usbd_conf.c */
+void OTG_FS_IRQHandler(void)
+{
+	 extern PCD_HandleTypeDef hpcd;
+	 HAL_PCD_IRQHandler(&hpcd);
+}
+
 void OTG_HS_IRQHandler(void)
 {
 	 extern PCD_HandleTypeDef hpcd;
